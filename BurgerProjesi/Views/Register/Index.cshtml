@@ -1,0 +1,29 @@
+﻿@model BurgerProjesi.Entities.Admin1
+@{
+    Layout = null;
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br /><br />
+    <div class="alert alert-info">BURGER ADMİN KAYIT SAYFASI</div>
+    <form method="post">
+        <label>Kullanıcı Adı</label>
+        @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+        <br />
+        <label>E-mail Adresi</label>
+        @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+        <br />
+        <label>Adınız</label>
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+        <br />
+        <label>Soyadınız</label>
+        @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
+        <br />
+        <label>Şifreniz</label>
+        @Html.PasswordFor(x => x.UserName, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-primary">KAYIT OL</button>
+    </form>
+</div>
